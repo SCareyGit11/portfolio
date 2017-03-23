@@ -1,0 +1,92 @@
+body{
+	background-image: url('../images/leather2.jpg');
+
+}
+
+header{
+	background-image: url('../images/quicksilver.png');
+	    /* Full height */
+    height: 140px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin: 10px 0px 10px 0px;
+	padding-left: 30px;
+	/*background-color: rgba(224, 224, 235, 0.45);*/
+	border: rgb(253, 253, 180);
+	border-width: 5px;
+	color: rgb(253, 253, 180);
+
+}
+
+#name{
+	font-size: 50px;
+	color: #1a0d00;
+	display: inline-block;
+}
+
+#job_title{
+	display: inline-block;
+	float: right;
+}
+
+#main{
+	margin-top: 100px;
+}
+
+.project{
+	/*background: rgba(224, 224, 235, 0.05);*/
+	margin: 15px 0px 15px 1px;
+	padding: 5px;
+	
+	color: rgb(253, 253, 180);
+}
+
+.project-img{
+	padding-top: 5px;
+	float: right;
+	width: 60%;
+}
+
+.project-title{
+	margin-top: 40px;
+}
+
+.project-desc{
+	width: 35%;
+}
+
+#contact{
+	float: right;
+	background-color: rgba(255, 255, 204, 0.35);
+	/*color: rgb(253, 253, 180);*/
+	color: #1a0d00;
+	width: 260px;
+	border-radius: 5px;
+	padding: 10px;
+	line-height: 200%;
+	border-top-color: solid rgb(253, 253, 180);
+	border-top-width: 4px;
+
+}
+#contact img{
+	padding-left: 30px;
+}
+#contact a{
+	/*color: rgb(253, 253, 180);*/
+	color: #1a0d00;
+}
+
+footer{
+	background-color: rgba(255, 255, 204, 0.25);
+	height: 140px;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+.footer-content{
+	margin-left: 15%;
+}

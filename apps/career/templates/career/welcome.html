@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sean Carey</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'career/css/style.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{% static 'career/js/portfolio.js' %}"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+  	<div class="container-fluid">
+  	
+  		<h1 id="name"> Sean Carey </h1>
+      <h3 id="job_title"> Full Stack Web Developer </h3>
+
+  	</div>
+  </header>
+
+  
+  <div class="container-fluid">	
+    
+    <div id="contact" class="col-sm-3">
+      <img src="{% static 'career/images/self.png' %}">
+      <ul style="list-style: none;">
+        
+        <li> seanv74672@gmail.com </li>
+        <li> 503-475-1704 </li>
+        <li> San Jose, CA </li>
+        <li><a href="https://www.github.com/SCareyGit11"> GitHub.com/SCareyGit11 </a></li>
+        <li><a href="https://www.linkedin.com/in/sean-carey-web-development"> LinkedIn.com/in/Sean-Carey-web-development </a></li>
+
+      </ul>  
+    </div>
+
+    <div id="main" class="container-fluid">
+    	<div class="col-sm-8 project">
+        <a href="http://54.245.29.150" class="project-img" target="_blank"><img src="{% static 'career/images/book_shelf.png' %}" data-alt-src="{% static 'career/images/books2.png' %}" class="img-thumbnail" ></a>
+    		<h1 class="project-title"> bookRoom </h1>
+    		<p class="project-desc">This is a user-driven site for organizing one's reading list, finding new books to read and posting reviews.  It was built with Ruby on Rails, Javascript, HTML and CSS and deployed through AWS. This was a pair project developed with <a href="https://www.linkedin.com/in/himanshi-khattar-8b1b3b19/" target="_blank">Himanshi Khattar</a>.  Please click the image to visit the site.</p>
+    		
+    	</div>
+     
+
+    	<div class="col-sm-8 project">
+    		<a href="http://54.187.22.78" class="project-img" id="superbowl_ads" target="_blank"><img src="{% static 'career/images/ads.png' %}" data-alt-src="{% static 'career/images/ads2.png' %}" class="img-thumbnail" ></a>
+        <h1 class="project-title"> Superbowl Ads </h1>
+    		<p class="project-desc"> This is a fun site where guests can view YouTube clips of Superbowl commercials, vote for their favorites and post comments.  It was built with Python/Django, Javascript, CSS and HTML and deployed through AWS.  Please click the image to visit the site.
+    		</p>
+    		
+    	</div>
+
+
+
+      <div class="col-sm-8 project">
+        <a href="http://54.201.14.57" class="project-img" id="quotables" target="_blank"><img src="{% static 'career/images/quotables.png' %}" data-alt-src="{% static 'career/images/quotes2.png' %}" class="img-thumbnail" ></a>
+        <h1 class="project-title"> Quotables </h1>
+        <p class="project-desc"> This site uses Python/Django with HTML, CSS, AJAX and Jquery for asynchronous loading of a "quotes" library.  Users can add content, filter results and test their knowledge.  Please click the image to visit the site.
+        </p>
+      </div>
+
+    </div>
+   </div>
+
+   <footer class="container-fluid">
+     
+       <span class="footer-content">
+         <a href="http://www.codingdojo.com" target="_blank">
+          <img src="{% static 'career/images/dojo.png' %}" width="180px" height="75px">
+         </a>
+       </span>       
+
+       <span class="footer-content">
+         <a href="http://linkedin.com/in/sean-carey-web-development" target="_blank">
+          <img src="{% static 'career/images/linkedin_black.png' %}" width="200px" height="120px"> 
+         </a>
+       </span>
+      
+       <span class="footer-content">
+         <a href="http://github.com/SCareyGit11" target="_blank">
+          <img src="{% static 'career/images/github_with_name.png' %}" width="210px" height="100px">
+         </a>
+       </span>
+
+     
+   </footer>
+
+</body>
+</html>
