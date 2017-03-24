@@ -65,7 +65,7 @@ header{
 	color: #1a0d00;
 	width: 260px;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 10px 8px;
 	line-height: 200%;
 	border-top-color: solid rgb(253, 253, 180);
 	border-top-width: 4px;
@@ -79,12 +79,17 @@ header{
 	color: #1a0d00;
 }
 
+#list-linked{
+	line-height: 100%;
+}
+
 footer{
 	background-color: rgba(255, 255, 204, 0.25);
 	height: 140px;
 	align-items: center;
 	margin-bottom: 20px;
 	margin-top: 100px;
+	padding-top: 10px;
 }
 
 .footer-content{
