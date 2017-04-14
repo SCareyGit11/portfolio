@@ -5,16 +5,12 @@ body{
 
 header{
 	background-image: url('../images/quicksilver.png');
-	    /* Full height */
     height: 140px; 
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	margin: 10px 0px 10px 0px;
 	padding-left: 30px;
-	/*background-color: rgba(224, 224, 235, 0.45);*/
 	border: rgb(253, 253, 180);
 	border-width: 5px;
 	color: rgb(253, 253, 180);
@@ -33,11 +29,21 @@ header{
 }
 
 #main{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
+
+#intro{
+	margin: 0px 400px 100px 150px;
+	padding-right: 40px;
+	color: rgb(253, 253, 180);
+	text-align: justify;
+}
+
+
+
 .project{
-	/*background: rgba(224, 224, 235, 0.05);*/
+	
 	margin: 15px 0px 15px 1px;
 	padding: 5px;
 	
@@ -61,7 +67,6 @@ header{
 #contact{
 	float: right;
 	background-color: rgba(255, 255, 204, 0.35);
-	/*color: rgb(253, 253, 180);*/
 	color: #1a0d00;
 	width: 260px;
 	border-radius: 5px;
@@ -75,7 +80,6 @@ header{
 	padding-left: 30px;
 }
 #contact a{
-	/*color: rgb(253, 253, 180);*/
 	color: #1a0d00;
 }
 
