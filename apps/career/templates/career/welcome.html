@@ -8,7 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{% static 'career/js/portfolio.js' %}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The portfolio page for Sean Carey, full stack web developer from San Jose, CA.  Python, Django, Flask, Mongo, Express, Angular, Node, HTML, CSS, Javascript, jQuery, AJAX, OOP, MVC, TDD, ORM, AWS, Ubuntu, Linux, Ruby on Rails.">
+  <meta name="description" content="The portfolio page for Sean Carey, full stack web developer from San Jose, CA.  Python, Django, Flask, MySQL, Mongo, Express, Angular, Node, HTML, CSS, Javascript, jQuery, AJAX, OOP, MVC, TDD, ORM, AWS, Ubuntu, Linux, Ruby on Rails.">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,51 +25,56 @@
 
   
   <div class="container-fluid">	
-    
-    <div id="contact" class="col-sm-3">
-      <img src="{% static 'career/images/self.PNG' %}">
-      <ul style="list-style: none;">
-        
-        <li> seanv74672@gmail.com </li>
-        <li> 503-475-1704 </li>
-        <li> San Jose, CA </li>
-        <li><a href="https://www.github.com/SCareyGit11" target="_blank"> GitHub.com/SCareyGit11 </a></li>
-        <li id="list-linked"><a href="https://www.linkedin.com/in/sean-carey-dev" target="_blank"> LinkedIn.com/in/Sean-Carey-dev </a></li>
+    <div class="row">
+        <span class="col-xs-4"></span>
+        <p id="intro" class="col-xs-4">
+          I'm a web developer and commercial truck driver.  I get inspired by how web applications give people opportunities to express themselves and realize their goals.  I feel honored that my code can contribute to that.  <br>See below for some example projects.  
+        </p>
 
-      </ul>  
+        <div id="contact" class="col-xs-3">
+          <img src="{% static 'career/images/self.PNG' %}">
+          <ul style="list-style: none;">
+            
+            <li> seanv74672@gmail.com </li>
+            <li> 503-475-1704 </li>
+            <li> San Jose, CA </li>
+            <li><a href="https://www.github.com/SCareyGit11" target="_blank"> GitHub.com/SCareyGit11 </a></li>
+            <li id="list-linked"><a href="https://www.linkedin.com/in/sean-carey-dev" target="_blank"> LinkedIn.com/in/Sean-Carey-dev </a></li>
+
+          </ul>  
+        </div>
+        <span class="col-xs-1"></span>
     </div>
 
-    <div id="main" class="container-fluid">
-      <p id="intro">
-        I'm a web developer and commercial truck driver.  I get inspired by how web applications give people opportunities to express themselves and realize their goals.  I feel honored that my code can contribute to that.  See below for some example projects.  
-      </p>
+    <div id="main">
 
-    	<div class="col-sm-8 project">
+
+    	<div class="col-xs-8 project">
         <a href="http://54.245.29.150" class="project-img" target="_blank"><img src="{% static 'career/images/book_shelf.PNG' %}" data-alt-src="{% static 'career/images/books2.PNG' %}" class="img-thumbnail" ></a>
     		<h1 class="project-title"> bookRoom </h1>
-    		<p class="project-desc">This is a user-driven site for organizing one's reading list, finding new books to read and posting reviews.  It was built with Ruby on Rails, Javascript, HTML and CSS and deployed through AWS. This was a pair project developed with <a href="https://www.linkedin.com/in/himanshi-khattar-8b1b3b19/" target="_blank">Himanshi Khattar</a>.  Please click the image to visit the site.</p>
+    		<p class="project-desc">This is a user-driven site for organizing one's reading list, finding new books to read and posting reviews.  It was built using Ruby on Rails with Javascript, HTML and CSS. This was a pair project developed with <a href="https://www.linkedin.com/in/himanshi-khattar-8b1b3b19/" target="_blank">Himanshi Khattar</a>.  It is deployed through AWS with an NGINX server.  Please click the image to visit the site.</p>
     		
     	</div>
      
 
-    	<div class="col-sm-8 project">
+    	<div class="col-xs-8 project">
     		<a href="http://54.187.22.78" class="project-img" id="superbowl_ads" target="_blank"><img src="{% static 'career/images/ads.PNG' %}" data-alt-src="{% static 'career/images/ads2.PNG' %}" class="img-thumbnail" ></a>
         <h1 class="project-title"> Superbowl Ads </h1>
-    		<p class="project-desc"> This is a fun site where guests can view YouTube clips of Superbowl commercials, vote for their favorites and post comments.  It was built with Python/Django, Javascript, CSS and HTML and deployed through AWS.  Please click the image to visit the site.
+    		<p class="project-desc"> This is a fun site where guests can view YouTube clips of Superbowl commercials, vote for their favorites and post comments.  It was built with Python/Django, SQL, Javascript, CSS, Bootstrap and HTML and deployed through AWS with NGINX.  Please click the image to visit the site.
     		</p>
     		
     	</div>
 
 
 
-      <div class="col-sm-8 project">
+      <div class="col-xs-8 project">
         <a href="http://54.201.14.57" class="project-img" id="quotables" target="_blank"><img src="{% static 'career/images/quotables.PNG' %}" data-alt-src="{% static 'career/images/quotes2.PNG' %}" class="img-thumbnail" ></a>
         <h1 class="project-title"> Quotables </h1>
-        <p class="project-desc"> This site uses Python/Django with HTML, CSS, AJAX and Jquery for asynchronous loading of a "quotes" library.  Users can add content, filter results and test their knowledge.  Please click the image to visit the site.
+        <p class="project-desc"> This site uses Python/Django with SQL, HTML, CSS, Bootstrap, AJAX and Jquery for asynchronous loading of a "quotes" library.  Users can add content, filter results from the database and test their knowledge.  It is deployed through AWS with an NGINX server.  Please click the image to visit the site.
         </p>
       </div>
 
-      <div class="col-sm-8 project">
+      <div class="col-xs-8 project">
         <a href="http://scareygit11.github.io" class="project-img" id="cards" target="_blank"><img src="{% static 'career/images/cards.PNG' %}" data-alt-src="{% static 'career/images/cards2.PNG' %}" class="img-thumbnail" ></a>
         <h1 class="project-title"> Blackjack </h1>
         <p class="project-desc"> This is a simple web app using javascript, HTML, CSS and Jquery.  It constructs javascript objects to randomly generate playing cards as you try to beat the dealer in blackjack.
@@ -79,7 +84,7 @@
     </div>
    </div>
 
-   <footer class="container-fluid">
+   <footer>
      
        <span class="footer-content">
          <a href="http://www.codingdojo.com" target="_blank">
