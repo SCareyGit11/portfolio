@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-  	<div class="container-fluid">
+  	<div id='heading' class="container-fluid">
   	
   		<h1 id="name"> Sean Carey </h1>
       <h3 id="job_title"> Full Stack Web Developer </h3>
@@ -25,26 +25,31 @@
 
   
   <div class="container-fluid">	
-    <div class="row">
-        <span class="col-xs-4"></span>
-        <p id="intro" class="col-xs-4">
-          I'm a web developer and commercial truck driver.  I get inspired by how web applications give people opportunities to express themselves and realize their goals.  I feel honored that my code can contribute to that.  <br>See below for some example projects.  
-        </p>
+    <!-- <div class="row">     -->
+        <!-- <span class="col-xs-10"></span> -->
 
-        <div id="contact" class="col-xs-3">
-          <img src="{% static 'career/images/self.PNG' %}">
-          <ul style="list-style: none;">
-            
-            <li> seanv74672@gmail.com </li>
-            <li> 503-475-1704 </li>
-            <li> San Jose, CA </li>
-            <li><a href="https://www.github.com/SCareyGit11" target="_blank"> GitHub.com/SCareyGit11 </a></li>
-            <li id="list-linked"><a href="https://www.linkedin.com/in/sean-carey-dev" target="_blank"> LinkedIn.com/in/Sean-Carey-dev </a></li>
+        
+        <div id="alert"></div>
+        
 
-          </ul>  
+        <div id="contact" class="col-xs-2">
+
+
+        <a id="email" href="#">
+          <img  src="{% static 'career/images/email.png' %}" height="90px" width="90px"> 
+        </a>
+        <!-- <img src="{% static 'career/images/phone.png' %}" height="90px" width="90px">  -->
+
+          <a href="http://linkedin.com/in/sean-carey-dev" target="_blank">
+            <img src="{% static 'career/images/in.png' %}" height="88px" width="88px"> 
+          </a>
+          
+          <a href="http://github.com/SCareyGit11" target="_blank">
+           <img src="{% static 'career/images/gitcircle.png' %}" height="90px" width="95px">
+         </a>
         </div>
-        <span class="col-xs-1"></span>
-    </div>
+        
+    <!-- </div> -->
 
     <div id="main">
 
@@ -77,14 +82,14 @@
       <div class="col-xs-8 project">
         <a href="http://scareygit11.github.io" class="project-img" id="cards" target="_blank"><img src="{% static 'career/images/cards.PNG' %}" data-alt-src="{% static 'career/images/cards2.PNG' %}" class="img-thumbnail" ></a>
         <h1 class="project-title"> Blackjack </h1>
-        <p class="project-desc"> This is a simple web app using javascript, HTML, CSS and Jquery.  It constructs javascript objects to randomly generate playing cards as you try to beat the dealer in blackjack.
+        <p class="project-desc"> This is a simple web app using javascript, HTML, CSS and Jquery.  It constructs javascript objects to randomly generate playing cards as you try to beat the dealer in blackjack.  Click the image to visit the site.
         </p>
       </div>
 
     </div>
    </div>
 
-   <footer>
+  <!--  <footer>
      
        <span class="footer-content">
          <a href="http://www.codingdojo.com" target="_blank">
@@ -93,19 +98,15 @@
        </span>       
 
        <span class="footer-content">
-         <a href="http://linkedin.com/in/sean-carey-dev" target="_blank">
-          <img src="{% static 'career/images/linkedin_black.png' %}" width="200px" height="120px"> 
-         </a>
+         
        </span>
       
        <span class="footer-content">
-         <a href="http://github.com/SCareyGit11" target="_blank">
-          <img src="{% static 'career/images/github_with_name.png' %}" width="235px" height="118px">
-         </a>
+         
        </span>
 
      
-   </footer>
+   </footer> -->
 
 </body>
 </html>

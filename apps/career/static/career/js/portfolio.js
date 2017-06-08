@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+	$('#email_alert').hide();
 	$('.img-thumbnail').hover(
 		// hover in, show the alt-img by making it the primary src and save original src as the new alt
 		function(){
@@ -15,5 +17,8 @@ $(document).ready(function(){
 				var temp = $(this).attr('src');
 				$(this).attr('src', original);
 				$(this).attr('data-alt-src', temp);
-		})
+		});
+
+	$('#email').click(
+		function(){ $('#alert').html("<p id='email_alert'>From database to client experience, I can help.  Email me at <strong>seanv74672@gmail.com</strong> today!</p>");})
 })

@@ -4,18 +4,25 @@ body{
 }
 
 header{
+	position: fixed;
+	margin: auto;
+	width: 100%;
+	z-index: 100000;
 	background-image: url('../images/quicksilver.png');
     height: 140px; 
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin: 10px 0px 10px 0px;
+	
 	padding-left: 30px;
 	border: rgb(253, 253, 180);
 	border-width: 5px;
 	color: rgb(253, 253, 180);
 
 }
+
+
 
 #name{
 	font-size: 50px;
@@ -29,7 +36,8 @@ header{
 }
 
 #main{
-	margin-top: 50px;
+	margin-top: 250px;
+	background-color: rgba(255, 255, 204, 0.35);
 }
 
 
@@ -65,23 +73,41 @@ header{
 }
 
 #contact{
-	float: right;
+	
+	position: fixed;
+	margin: 20% 2% 0% 88%;
 	background-color: rgba(255, 255, 204, 0.35);
 	color: #1a0d00;
-	width: 260px;
+	width: 10%;
 	border-radius: 5px;
-	padding: 10px 8px;
+	padding: 2px 2px 2px 18px;
 	line-height: 200%;
-	border-top-color: solid rgb(253, 253, 180);
-	border-top-width: 4px;
+	/*border-top-color: solid rgb(253, 253, 180);*/
+	
 
 }
+
+#alert{
+	position: fixed;
+	margin: 14% 1% 0% 72%;
+	width: 24%;
+	
+}
+#email_alert{
+	
+	background-color: rgba(255, 255, 204, 0.35);
+	color: rgb(253, 253, 180);
+	border-radius: 5px;
+	padding: 1%;
+	line-height: 200%;
+}
+
 #contact img{
-	padding-left: 30px;
+	
+	margin-bottom: 14px;
+	border-bottom: 1px solid #555;
 }
-#contact a{
-	color: #1a0d00;
-}
+
 
 #list-linked{
 	line-height: 100%;
